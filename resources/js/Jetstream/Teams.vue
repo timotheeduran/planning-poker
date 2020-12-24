@@ -16,6 +16,7 @@
                                 <div class="text-xs font-medium lg:text-sm">
                                     <h3>Me</h3>
                                     <p class="text-indigo-600">Not voted yet</p>
+                                    <p class="text-indigo-600">{{ teammates }}</p>
                                 </div>
                             </div>
                         </div>
@@ -43,21 +44,12 @@
 export default {
 
     props: {
+        teammates: Object,
         values: {
             type: Array,
-            default: [0,0.5,1,2,3,5,8,13,20,40,100]
-        },
-        id: {
-            type: String,
-            default: ''
-        },
-        placeholder: {
-            type: String,
-            default: ''
-        },
-        isInvalid: {
-            type: Boolean,
-            default: false
+            default: function () {
+                return [0,0.5,1,2,3,5,8,13,20,40,100]
+            },
         },
     },
 
