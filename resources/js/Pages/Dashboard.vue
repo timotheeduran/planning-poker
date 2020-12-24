@@ -3,16 +3,9 @@
 
         <div class="py-12">
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                    <div class="bg-white">
+                <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                         <div class="max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24">
                             <div class="space-y-8 sm:space-y-12">
-                                <div class="space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl">
-                                    <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">let's Vote!</h2>
-                                    <button v-for="(value, index) in values" :class="{ 'rounded-l-md': index === 0, 'rounded-r-md': index === (values.length - 1)}" type="button" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
-                                        {{ value }}
-                                    </button>
-                                </div>
                                 <ul class="mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-6">
                                     <li v-for="teammate in teammates">
                                         <div class="space-y-4">
@@ -26,10 +19,23 @@
                                         </div>
                                     </li>
                                 </ul>
+                                <div class="max-w-7xl mx-auto py-9 px-4 sm:px-6 lg:px-8">
+                                    <div class="bg-indigo-700 rounded-lg shadow-2xl overflow-hidden">
+                                        <div class="pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20">
+                                            <div class="lg:self-center">
+                                                <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+                                                    <span class="block">Let's vote!</span>
+                                                </h2>
+                                                <button v-for="value in values" type="button" class="mt-3 mr-1 inline-flex items-center px-6 py-3 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-indigo-100 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                                                    <strong>{{ value }}</strong>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                    </div>
                 </div>
             </div>
         </div>

@@ -3333,6 +3333,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -4886,6 +4892,19 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -47981,100 +48000,110 @@ var render = function() {
       _c("div", { staticClass: "max-w-7xl mx-auto sm:px-6 lg:px-8" }, [
         _c(
           "div",
-          { staticClass: "bg-white overflow-hidden shadow-xl sm:rounded-lg" },
+          { staticClass: "bg-white overflow-hidden shadow-sm sm:rounded-lg" },
           [
-            _c("div", { staticClass: "bg-white" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24"
-                },
-                [
-                  _c("div", { staticClass: "space-y-8 sm:space-y-12" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "space-y-5 sm:mx-auto sm:max-w-xl sm:space-y-4 lg:max-w-5xl"
-                      },
-                      [
-                        _c(
-                          "h2",
-                          {
+            _c(
+              "div",
+              {
+                staticClass:
+                  "max-w-7xl mx-auto py-12 px-4 text-center sm:px-6 lg:px-8 lg:py-24"
+              },
+              [
+                _c("div", { staticClass: "space-y-8 sm:space-y-12" }, [
+                  _c(
+                    "ul",
+                    {
+                      staticClass:
+                        "mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-6"
+                    },
+                    _vm._l(_vm.teammates, function(teammate) {
+                      return _c("li", [
+                        _c("div", { staticClass: "space-y-4" }, [
+                          _c("img", {
                             staticClass:
-                              "text-3xl font-extrabold tracking-tight sm:text-4xl"
-                          },
-                          [_vm._v("let's Vote!")]
-                        ),
-                        _vm._v(" "),
-                        _vm._l(_vm.values, function(value, index) {
-                          return _c(
-                            "button",
+                              "mx-auto h-20 w-20 rounded-full lg:w-24 lg:h-24",
+                            attrs: { src: teammate.profile_photo_url, alt: "" }
+                          }),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "space-y-2" }, [
+                            _c(
+                              "div",
+                              { staticClass: "text-xs font-medium lg:text-sm" },
+                              [
+                                _c("h3", [_vm._v(_vm._s(teammate.name))]),
+                                _vm._v(" "),
+                                _c("p", { staticClass: "text-indigo-600" }, [
+                                  _vm._v("Not voted yet")
+                                ])
+                              ]
+                            )
+                          ])
+                        ])
+                      ])
+                    }),
+                    0
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass: "max-w-7xl mx-auto py-9 px-4 sm:px-6 lg:px-8"
+                    },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "bg-indigo-700 rounded-lg shadow-2xl overflow-hidden"
+                        },
+                        [
+                          _c(
+                            "div",
                             {
                               staticClass:
-                                "relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:z-10 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500",
-                              class: {
-                                "rounded-l-md": index === 0,
-                                "rounded-r-md": index === _vm.values.length - 1
-                              },
-                              attrs: { type: "button" }
+                                "pt-10 pb-12 px-6 sm:pt-16 sm:px-16 lg:py-16 lg:pr-0 xl:py-20 xl:px-20"
                             },
                             [
-                              _vm._v(
-                                "\n                                    " +
-                                  _vm._s(value) +
-                                  "\n                                "
+                              _c(
+                                "div",
+                                { staticClass: "lg:self-center" },
+                                [
+                                  _c(
+                                    "h2",
+                                    {
+                                      staticClass:
+                                        "text-3xl font-extrabold text-white sm:text-4xl"
+                                    },
+                                    [
+                                      _c("span", { staticClass: "block" }, [
+                                        _vm._v("Let's vote!")
+                                      ])
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _vm._l(_vm.values, function(value) {
+                                    return _c(
+                                      "button",
+                                      {
+                                        staticClass:
+                                          "mt-3 mr-1 inline-flex items-center px-6 py-3 shadow-sm text-base font-medium rounded-md text-gray-700 bg-white hover:bg-indigo-100 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+                                        attrs: { type: "button" }
+                                      },
+                                      [_c("strong", [_vm._v(_vm._s(value))])]
+                                    )
+                                  })
+                                ],
+                                2
                               )
                             ]
                           )
-                        })
-                      ],
-                      2
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "ul",
-                      {
-                        staticClass:
-                          "mx-auto grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-4 md:gap-x-6 lg:max-w-5xl lg:gap-x-8 lg:gap-y-12 xl:grid-cols-6"
-                      },
-                      _vm._l(_vm.teammates, function(teammate) {
-                        return _c("li", [
-                          _c("div", { staticClass: "space-y-4" }, [
-                            _c("img", {
-                              staticClass:
-                                "mx-auto h-20 w-20 rounded-full lg:w-24 lg:h-24",
-                              attrs: {
-                                src: teammate.profile_photo_url,
-                                alt: ""
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "space-y-2" }, [
-                              _c(
-                                "div",
-                                {
-                                  staticClass: "text-xs font-medium lg:text-sm"
-                                },
-                                [
-                                  _c("h3", [_vm._v(_vm._s(teammate.name))]),
-                                  _vm._v(" "),
-                                  _c("p", { staticClass: "text-indigo-600" }, [
-                                    _vm._v("Not voted yet")
-                                  ])
-                                ]
-                              )
-                            ])
-                          ])
-                        ])
-                      }),
-                      0
-                    )
-                  ])
-                ]
-              )
-            ])
+                        ]
+                      )
+                    ]
+                  )
+                ])
+              ]
+            )
           ]
         )
       ])
@@ -51143,116 +51172,18 @@ var staticRenderFns = [
         },
         [
           _c("div", { staticClass: "px-4 py-8 sm:px-10" }, [
-            _c("div", { staticClass: "mt-6" }, [
+            _c("div", [
               _c(
-                "form",
+                "a",
                 {
-                  staticClass: "space-y-6",
-                  attrs: { action: "#", method: "POST" }
+                  staticClass:
+                    "w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
+                  attrs: { href: "/register" }
                 },
                 [
-                  _c("div", [
-                    _c(
-                      "label",
-                      {
-                        staticClass: "block text-sm font-medium text-gray-700",
-                        attrs: { for: "name" }
-                      },
-                      [
-                        _vm._v(
-                          "\n                                                Display Name\n                                            "
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "mt-1" }, [
-                      _c("input", {
-                        staticClass:
-                          "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm",
-                        attrs: {
-                          id: "name",
-                          name: "name",
-                          type: "text",
-                          autocomplete: "name",
-                          required: ""
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", [
-                    _c(
-                      "label",
-                      {
-                        staticClass: "block text-sm font-medium text-gray-700",
-                        attrs: { for: "email" }
-                      },
-                      [
-                        _vm._v(
-                          "\n                                                Email address\n                                            "
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "mt-1" }, [
-                      _c("input", {
-                        staticClass:
-                          "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm",
-                        attrs: {
-                          id: "email",
-                          name: "email",
-                          type: "email",
-                          autocomplete: "email",
-                          required: ""
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", [
-                    _c(
-                      "label",
-                      {
-                        staticClass: "block text-sm font-medium text-gray-700",
-                        attrs: { for: "password" }
-                      },
-                      [
-                        _vm._v(
-                          "\n                                                Password\n                                            "
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "mt-1" }, [
-                      _c("input", {
-                        staticClass:
-                          "appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm",
-                        attrs: {
-                          id: "password",
-                          name: "password",
-                          type: "password",
-                          autocomplete: "current-password",
-                          required: ""
-                        }
-                      })
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", [
-                    _c(
-                      "button",
-                      {
-                        staticClass:
-                          "w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500",
-                        attrs: { type: "submit" }
-                      },
-                      [
-                        _vm._v(
-                          "\n                                                Start playing\n                                            "
-                        )
-                      ]
-                    )
-                  ])
+                  _vm._v(
+                    "\n                                        Register\n                                    "
+                  )
                 ]
               )
             ]),

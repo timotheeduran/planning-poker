@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="766px" height="967px" viewBox="0 0 766 967" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Desktop Copy</title>
+    <g id="Desktop-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" fill="#5145CD">
+            <path d="M457.430431,56.2669675 L482.082358,196.075193 L376.749916,179.392928 C335.167578,172.806933 296.094088,200.827512 288.861842,242.143431 L288.65246,243.399477 L205.924358,765.718193 L181.186117,770.080724 C144.745198,776.506241 109.995087,752.173951 103.569569,715.733033 L1.46444094,136.666074 C-4.96107616,100.225155 19.3712142,65.4750435 55.8121325,59.0495264 L379.813883,1.91927594 C416.254802,-4.50624117 451.004913,19.8260491 457.430431,56.2669675 Z" id="Combined-Shape"></path>
+        </g>
+        <rect id="Rectangle-Copy" fill="#5145CD" transform="translate(489.500000, 583.000000) rotate(9.000000) translate(-489.500000, -583.000000) " x="258" y="222" width="463" height="722" rx="67"></rect>
+    </g>
+</svg>
